@@ -77,16 +77,7 @@ window.onload = () => {
         .addTo(map);
     });
 
-    let canvas = document.getElementById('quiz');
-
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
-
     document.addEventListener('keypress', SetQuizDisp);
-}
-function SetQuizDisp(){
-
-    //let canvas = document.getElementById('quiz');
 }
 function SetQuizMarker(map) {
 
