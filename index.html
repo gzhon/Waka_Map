@@ -1,63 +1,59 @@
 <!doctype html>
 <!--
-   GIBS Web Examples
+  GIBS Web Examples
 
-   Copyright 2013 - 2020 United States Government as represented by the
-   Administrator of the National Aeronautics and Space Administration.
-   All Rights Reserved.
+  Copyright 2013 - 2020 United States Government as represented by the
+  Administrator of the National Aeronautics and Space Administration.
+  All Rights Reserved.
 
-   Licensed under the Apache License, Version 2.0 (the 'License');
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an 'AS IS' BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
 -->
 <html>
+  <head>
+    <title>わかやまっぷ</title>
+    <link rel="icon" href="img/icon.svg">
+    <meta name="viewport" content="width=360,initial-scale=1">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
 
-<head>
-  <title>GIBS Mapbox GL Example - Web Mercator (EPSG:3857)</title>
+    <script src='src/GeoJson.js'></script>
+    <script src='dist/markers.js'></script>
+    <link href='dist/markers.css' rel='stylesheet' />
+    <link rel='stylesheet' href='style.css' />
+  </head>
+  <body>
+    <header class="header">
+      わかやまっぷ
+    </header>
+    <div id='map'></div>
+    <script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      mapboxgl.accessToken = "pk.eyJ1Ijoia2l0YTgwOSIsImEiOiJjbDl3aDI2dW0wMGhwM25wZ3F1dzY0dWpoIn0.FpW_DVS6BBOo502F5coh7w";
 
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
-  <link rel='stylesheet' href='example.css' />
+      const bounds = [
+          [134.992446,33.349458],
+          [136.136398,34.490504]
+      ];
 
-  <script type='text/javascript' src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
-  <script src='app.js'></script>
-</head>
+      let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v9',
+        center: [135.450539, 33.926839],
+        zoom: 7.5,
+        maxBounds: bounds
+      });
 
-<body>
-  <div id='map'></div>
-  <div id='attribution'>
-    <a href='http://mapbox.com'>Mapbox</a>
-    <a href='https://wiki.earthdata.nasa.gov/display/GIBS'>NASA EOSDIS GIBS</a>
-    <a href='https://github.com/nasa-gibs/web-examples/blob/master/examples/mapbox-gl/webmercator-epsg3857.js'>
-      View Source
-    </a>
-  </div>
-  <div id="Year-box">
-    <div id="ppm">
-      <h1>Year ppm: 000</h1>
-    </div>
-  </div>
-  <div id="time-num-box">
-    <div id="time-num">
-      <h1>2022年7月</h1>
-    </div>
-  </div>
-  <div id="set_time">
-    <button type="button" class="btn btn-primary" id="back_year">前の年</button>
-    <button type="button" class="btn btn-primary" id="next_year">次の年</button>
-    <button type="button" class="btn btn-primary" id="back_mooth">前の月</button>
-    <button type="button" class="btn btn-primary" id="next_mooth">次の月</button>
-  </div>
-</body>
-
+      map.addControl(new MapboxMarkers(GeoJson));
+    </script>
+  </body>
 </html>

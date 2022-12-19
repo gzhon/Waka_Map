@@ -1,0 +1,30 @@
+.marker {
+    background-image: url('maker.svg');
+    background-size: cover;
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 14px -2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 14px -2px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 14px -2px rgba(0,0,0,0.1);
+    transition: box-shadow 0.4s ease-in-out;
+}
+.marker:hover,.marker.active{
+    -webkit-box-shadow: 2px 2px 14px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 14px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 14px 1px rgba(0,0,0,1);
+    transition: box-shadow 0.1s ease-in-out;
+}
+.mapboxgl-popup {
+    max-width: 300px;
+    font-size: 20px;
+}
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mapboxgl-ctrl.markers input{
+    padding: 5px;
+}
