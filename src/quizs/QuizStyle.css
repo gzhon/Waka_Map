@@ -1,0 +1,15 @@
+.quiz {
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(212, 212, 233);
+}
+.options {
+    cursor: pointer;
+    width: 60%;
+    background: #fbfbfb;
+    border-radius: 20px;
+}
+.sublimt{
+    text-align: center;
+}

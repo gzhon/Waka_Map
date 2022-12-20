@@ -1,4 +1,4 @@
-export const quizDate = [
+const quizDate = [
     {
         id:0,
         pos: [135.8797731, 33.550702],
