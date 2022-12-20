@@ -4,7 +4,7 @@ const GeoJson = {
         {
             "type": "Feature",
             "properties": {
-                "marker-image": "dist//marker.svg",
+                "marker-image": "dist//g-marker.svg",
                 "title": "奥の院",
                 "description":"奥の院の説明です",
                 "website":"https://github.com/mapbox/mapbox-gl-markers"
@@ -66,7 +66,8 @@ const GeoJson = {
             "type": "Feature",
             "properties": {
                 "marker-image": "dist//marker.svg",
-                "title": "那智の滝"
+                "title": "那智の滝",
+                "description":"日本一の落差を"
             },
             "geometry": {
             "coordinates": [
