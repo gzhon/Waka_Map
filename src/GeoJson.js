@@ -7,7 +7,7 @@ const GeoJson = {
                 "marker-image": "dist//g-marker.svg",
                 "title": "奥の院",
                 "description":"奥の院の説明です",
-                "website":"https://gzhon.github.io/Waka_Map/quizs/00.html"
+                "website":"https://gzhon.github.io/Waka_Map/src/quizs/00.html"
             },
             "geometry": {
                 "coordinates": [
