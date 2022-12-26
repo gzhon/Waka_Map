@@ -2,8 +2,12 @@ function E_id(id) {
     return document.getElementById(id);
 }
 
-function SetQuiz(id){
-    console.log(quizDate[id]);
+function SetQuiz(){
+
+    let params = new URLSearchParams(window.location.search);
+    console.log(params.has("id"));
+    //console.log(quizDate[params.has("id")]);
+    /*
     const title = document.getElementById("title");
     const select = document.getElementById("select");
 
@@ -27,6 +31,7 @@ function SetQuiz(id){
         select.appendChild(select_label)
         select.appendChild(document.createElement("br"));
     }
+    */
 }
 
 function ResultQuiz(id){
