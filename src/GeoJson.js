@@ -58,7 +58,7 @@ const GeoJson = {
       properties: {
         "marker-image": "dist//marker.svg",
         title: "那智の滝",
-        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=00",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=04",
         description: "日本一の落差を",
       },
       geometry: {
