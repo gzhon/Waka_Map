@@ -4,7 +4,7 @@ const GeoJson = {
     {
       type: "Feature",
       properties: {
-        "marker-image": "dist//g-marker.svg",
+        "marker-image": "dist//marker.svg",
         title: "奥の院",
         description: "弘法大師空海が開創した聖地",
         website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=00",
@@ -45,7 +45,7 @@ const GeoJson = {
       type: "Feature",
       properties: {
         "marker-image": "dist//marker.svg",
-        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=03",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=04",
         title: "ぶつぶつ川",
       },
       geometry: {
