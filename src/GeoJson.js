@@ -7,7 +7,7 @@ const GeoJson = {
         "marker-image": "dist//g-marker.svg",
         title: "奥の院",
         description: "弘法大師空海が開創した聖地",
-        website: "src/quizs/00.html",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=00",
       },
       geometry: {
         coordinates: [135.60360796287182, 34.21742878512801],
@@ -21,6 +21,7 @@ const GeoJson = {
         "marker-size": "medium",
         "marker-symbol": "",
         "marker-image": "dist//marker.svg",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=01",
         title: "貴志駅",
       },
       geometry: {
@@ -32,6 +33,7 @@ const GeoJson = {
       type: "Feature",
       properties: {
         "marker-image": "dist//marker.svg",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=02",
         title: "潮岬",
       },
       geometry: {
@@ -43,6 +45,7 @@ const GeoJson = {
       type: "Feature",
       properties: {
         "marker-image": "dist//marker.svg",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=03",
         title: "ぶつぶつ川",
       },
       geometry: {
@@ -55,6 +58,7 @@ const GeoJson = {
       properties: {
         "marker-image": "dist//marker.svg",
         title: "那智の滝",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=00",
         description: "日本一の落差を",
       },
       geometry: {
