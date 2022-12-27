@@ -34,19 +34,6 @@ const GeoJson = {
       type: "Feature",
       properties: {
         "marker-image": "dist//marker.svg",
-        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=02",
-        title: "潮岬",
-        description: "",
-      },
-      geometry: {
-        coordinates: [135.75578424931342, 33.43697963106372],
-        type: "Point",
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
-        "marker-image": "dist//marker.svg",
         website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=04",
         title: "ぶつぶつ川",
         description: "日本で最も短い川",
@@ -65,7 +52,7 @@ const GeoJson = {
         description: "小型ロケットで宇宙へ",
       },
       geometry: {
-        coordinates: [135.8897592331021, 33.67306193486884],
+        coordinates: [135.877565, 33.5507139],
         type: "Point",
       },
     },
