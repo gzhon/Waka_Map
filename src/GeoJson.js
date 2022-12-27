@@ -17,6 +17,19 @@ const GeoJson = {
     {
       type: "Feature",
       properties: {
+        "marker-image": "dist//marker.svg",
+        title: "三鈷の松",
+        description: "弘法大師空海が開創した聖地",
+        website: "https://gzhon.github.io/Waka_Map/src/quizs/quiz.html?id=05",
+      },
+      geometry: {
+        coordinates: [135.5771003, 34.2133524],
+        type: "Point",
+      },
+    },
+    {
+      type: "Feature",
+      properties: {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
