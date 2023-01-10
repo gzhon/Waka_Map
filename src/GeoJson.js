@@ -14,6 +14,7 @@ const GeoJson = {
         type: "Point",
       },
     },
+    /*
     {
       type: "Feature",
       properties: {
@@ -26,7 +27,7 @@ const GeoJson = {
         coordinates: [135.5771003, 34.2133524],
         type: "Point",
       },
-    },
+    },*/
     {
       type: "Feature",
       properties: {
