@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=360,initial-scale=1">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
-
     <script src='src/GeoJson.js'></script>
     <script src='dist/markers.js'></script>
     <link href='dist/markers.css' rel='stylesheet' />
@@ -18,6 +17,8 @@
     <div id='map'></div>
     <script>
 
+      mapboxgl.accessToken = "pk.eyJ1Ijoia2l0YTgwOSIsImEiOiJjbDl3aDI2dW0wMGhwM25wZ3F1dzY0dWpoIn0.FpW_DVS6BBOo502F5coh7w";
+
       const bounds = [
           [134.992446,33.349458],
           [136.136398,34.490504]
@@ -25,11 +26,11 @@
 
       let map = new mapboxgl.Map({
         container: 'map',
+        style: 'mapbox://styles/mapbox/light-v9',
         center: [135.450539, 33.926839],
         zoom: 8,
         maxBounds: bounds
       });
-
       map.addControl(new MapboxMarkers(GeoJson));
     </script>
   </body>
